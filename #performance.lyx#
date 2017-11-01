@@ -479,7 +479,7 @@ my desktop w/o the static x in LCG64
 \begin_inset Text
 
 \begin_layout Plain Layout
-cluster
+cluster with 12 CPUs
 \end_layout
 
 \end_inset
@@ -526,7 +526,7 @@ cluster
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+21.86s
 \end_layout
 
 \end_inset
@@ -573,7 +573,7 @@ cluster
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+16.36s
 \end_layout
 
 \end_inset
@@ -620,7 +620,7 @@ cluster
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5.35s
 \end_layout
 
 \end_inset
@@ -714,7 +714,7 @@ cluster
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4.23s
 \end_layout
 
 \end_inset
