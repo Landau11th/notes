@@ -431,8 +431,9 @@ The following table records the scaling of elapsed time as the number of
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="4">
+<lyxtabular version="3" rows="6" columns="5">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -461,6 +462,15 @@ my desktop (Core i7-6700 @ 3.40 GHz)
 
 \begin_layout Plain Layout
 my desktop with -O3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+my desktop w/o the static x in LCG64
 \end_layout
 
 \end_inset
@@ -503,6 +513,15 @@ cluster
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14.90s
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -537,6 +556,15 @@ cluster
 
 \begin_layout Plain Layout
 9.88s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.68s
 \end_layout
 
 \end_inset
@@ -579,6 +607,15 @@ cluster
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.42s
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -617,6 +654,15 @@ cluster
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.73s
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -651,6 +697,15 @@ cluster
 
 \begin_layout Plain Layout
 5.53s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.77s
 \end_layout
 
 \end_inset
@@ -707,6 +762,14 @@ target "https://software.intel.com/en-us/articles/avoiding-and-identifying-false
 \end_inset
 
 , therefore the related test data are not listed here.
+ 
+\end_layout
+
+\begin_layout Standard
+I made a serious mistake in the earlier version of random number generator:
+ I set the seed x as the static member of the LCG64, which will cause racing
+ condition in parallel.
+ The results with non-static x is the third column, with -O3 option.
 \end_layout
 
 \end_body
