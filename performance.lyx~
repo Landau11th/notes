@@ -747,6 +747,339 @@ symmetric diagonalization
 
 \end_layout
 
+\begin_layout Subsubsection
+with Intel MKL
+\end_layout
+
+\begin_layout Standard
+Target is built on my desktop, with intel c compiler, /Qmkl option.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+matrix size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Generate a random matrix
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+matrix multiplication
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+symmetric diagonalization
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1ms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4ms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+400
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11ms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+77ms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+101ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+101ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+619ms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+369ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+605ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5972ms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4096
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+406ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+596ms
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6673ms
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The performance is boosted over 20 times for matrix multiplication and diagonali
+zation.
+ This means the above arma is not optimized for single thread.
+\end_layout
+
 \begin_layout Subsection
 Eigen
 \end_layout
@@ -1081,12 +1414,19 @@ symmetric diagonalization
 
 \end_layout
 
+\begin_layout Standard
+The performance is signifcantly better than arma, which might be because
+ of the above arma is dynamically linked, or the lapack is not optimized
+ to suit local machine.
+\end_layout
+
 \begin_layout Subsubsection
 with Intel MKL
 \end_layout
 
 \begin_layout Standard
 Machine is still my desktop, with intel c compiler, /Qmkl option.
+ Unit is ms
 \end_layout
 
 \begin_layout Standard
@@ -1149,7 +1489,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-2ms
+1
 \end_layout
 
 \end_inset
@@ -1158,7 +1498,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-11343ms
+39
 \end_layout
 
 \end_inset
@@ -1167,7 +1507,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-13ms
+3
 \end_layout
 
 \end_inset
@@ -1187,7 +1527,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-2ms
+1
 \end_layout
 
 \end_inset
@@ -1196,7 +1536,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-22ms
+30
 \end_layout
 
 \end_inset
@@ -1205,7 +1545,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-5ms
+5
 \end_layout
 
 \end_inset
@@ -1225,7 +1565,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-4ms
+4
 \end_layout
 
 \end_inset
@@ -1234,7 +1574,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-21ms
+37
 \end_layout
 
 \end_inset
@@ -1243,7 +1583,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-20ms
+21
 \end_layout
 
 \end_inset
@@ -1263,7 +1603,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-16ms
+17
 \end_layout
 
 \end_inset
@@ -1272,7 +1612,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-29ms
+63
 \end_layout
 
 \end_inset
@@ -1281,7 +1621,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-179ms
+167
 \end_layout
 
 \end_inset
@@ -1301,7 +1641,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-60ms
+57
 \end_layout
 
 \end_inset
@@ -1310,7 +1650,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-197ms
+225
 \end_layout
 
 \end_inset
@@ -1319,7 +1659,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-1202ms
+1253
 \end_layout
 
 \end_inset
@@ -1339,7 +1679,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-229ms
+220
 \end_layout
 
 \end_inset
@@ -1348,7 +1688,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-997ms
+1065
 \end_layout
 
 \end_inset
@@ -1357,7 +1697,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-10357ms
+10149
 \end_layout
 
 \end_inset
@@ -1377,7 +1717,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-235ms
+236
 \end_layout
 
 \end_inset
@@ -1386,7 +1726,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-1157ms
+1128
 \end_layout
 
 \end_inset
@@ -1395,7 +1735,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-10962ms
+11087
 \end_layout
 
 \end_inset
@@ -1406,6 +1746,20 @@ symmetric diagonalization
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The difference between LP64 and ILP64 interface is not well-understood yet,
+ therefore the optimization might not be fully.
+ See 
+\begin_inset CommandInset href
+LatexCommand href
+name "Eigen and Intel MKL"
+target "http://eigen.tuxfamily.org/dox-3.2/TopicUsingIntelMKL.html"
+
+\end_inset
+
+ for more info.
 \end_layout
 
 \begin_layout Section

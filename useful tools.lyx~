@@ -71,8 +71,8 @@
 \begin_body
 
 \begin_layout Standard
-std::clock() measures CPU time; while std::chrono::system_clock::now() measures
- wall clock time, and in higher precision
+std::clock() measures CPU time, the precision is 10ms; while std::chrono::system
+_clock::now() measures wall clock time, and in higher precision
 \end_layout
 
 \end_body

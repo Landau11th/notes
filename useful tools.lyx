@@ -75,5 +75,17 @@ std::clock() measures CPU time, the precision is 10ms; while std::chrono::system
 _clock::now() measures wall clock time, and in higher precision
 \end_layout
 
+\begin_layout Standard
+see 
+\begin_inset CommandInset href
+LatexCommand href
+name "Intel® Threading Building Blocks, OpenMP, or native threads?"
+target "https://software.intel.com/en-us/intel-threading-building-blocks-openmp-or-native-threads"
+
+\end_inset
+
+ for a comparison between TBB, OMP and native threads
+\end_layout
+
 \end_body
 \end_document
