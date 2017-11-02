@@ -74,6 +74,20 @@
 Matrix Manipulation
 \end_layout
 
+\begin_layout Standard
+A benchmark of various library could be found 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://stackoverflow.com/questions/7596612/benchmarking-python-vs-c-using-blas-and-numpy"
+
+\end_inset
+
+.
+ When using armadillo with static linked libraries, MKL could be slightly
+ better than MatLab, which uses the same kernel.
+\end_layout
+
 \begin_layout Subsection
 Armadillo
 \end_layout

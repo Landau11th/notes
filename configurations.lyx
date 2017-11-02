@@ -74,6 +74,46 @@
 C++ Compiler in Command Line
 \end_layout
 
+\begin_layout Subsection
+Linux
+\end_layout
+
+\begin_layout Standard
+Add the armadillo or eigen path to environment variable, for convenience
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+MY_ARMA_INCLUDE=~/Library/armadillo/include
+\end_layout
+
+\begin_layout Plain Layout
+
+export MY_ARMA_INCLUDE
+\end_layout
+
+\end_inset
+
+where is the location I put armadillo.
+\end_layout
+
+\begin_layout Standard
+Or follow 
+\begin_inset CommandInset href
+LatexCommand href
+name "How to permanently set environmental variables"
+target "https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Code::Block
 \end_layout

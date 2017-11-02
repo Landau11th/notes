@@ -90,5 +90,97 @@ Visual Studio
 Metropolis in Ising Model
 \end_layout
 
+\begin_layout Section
+Intel MKL
+\end_layout
+
+\begin_layout Standard
+On windows, load intel c compiler environment via commands like
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cd /d C:
+\backslash
+Program Files (x86)
+\backslash
+IntelSWTools
+\backslash
+compilers_and_libraries_2017.4.210
+\backslash
+windows
+\backslash
+bin 
+\end_layout
+
+\begin_layout Plain Layout
+
+CALL compilervars.bat intel64
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and compiler with
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+icl /Qmkl main.cpp -I"path of other dependencies"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+More info are available on 
+\begin_inset CommandInset href
+LatexCommand href
+name "MKL documentation"
+target "https://software.intel.com/en-us/mkl/documentation"
+
+\end_inset
+
+, and one can search link options on 
+\begin_inset CommandInset href
+LatexCommand href
+name "Intel MKL Link Advisor"
+target "https://software.intel.com/en-us/articles/intel-mkl-link-line-advisor"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+OpenMP
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Intel OpenMP Started"
+target "https://software.intel.com/en-us/articles/getting-started-with-openmp"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
