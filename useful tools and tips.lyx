@@ -87,5 +87,24 @@ target "https://software.intel.com/en-us/intel-threading-building-blocks-openmp-
  for a comparison between TBB, OMP and native threads
 \end_layout
 
+\begin_layout Standard
+arma::eig_sym may give NaN results even the input is Hermitian.
+ Switch to 
+\begin_inset Quotes eld
+\end_inset
+
+std
+\begin_inset Quotes erd
+\end_inset
+
+ method may help
+\end_layout
+
+\begin_layout Standard
+Use of C++11 auto is not recommended with Armadillo objects and expressions.
+ Armadillo has a template meta-programming framework which creates lots
+ of short lived temporaries that are not handled by auto.
+\end_layout
+
 \end_body
 \end_document
