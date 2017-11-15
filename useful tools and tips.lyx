@@ -106,5 +106,27 @@ Use of C++11 auto is not recommended with Armadillo objects and expressions.
  of short lived temporaries that are not handled by auto.
 \end_layout
 
+\begin_layout Standard
+In template class, use of non-dependent (does not relies on the template
+ parameters) members of base class should be careful.
+ this-> is needed according to C++ standards.
+ However, the default compiler of VS will neglect this mistake, which will
+ cause problems in other platforms.
+\end_layout
+
+\begin_layout Standard
+Openblas is quite convenient and provide comparable performance of Intel
+ MKL
+\end_layout
+
+\begin_layout Standard
+Under Linux (Ubuntu), the frequently used libraries/softwares (blas, lapack,
+ openblas, g++...) could be obtained easily
+\end_layout
+
+\begin_layout Standard
+Need to learn to use debugger in command line
+\end_layout
+
 \end_body
 \end_document
