@@ -70,6 +70,10 @@
 
 \begin_body
 
+\begin_layout Section
+C++
+\end_layout
+
 \begin_layout Standard
 std::clock() measures CPU time, the precision is 10ms; while std::chrono::system
 _clock::now() measures wall clock time, and in higher precision
@@ -131,6 +135,22 @@ Need to learn to use debugger in command line
 \begin_layout Standard
 Pay attention to implicit conversion.
  Use explicit keyword to fix possible ambiguity.
+\end_layout
+
+\begin_layout Section
+Python
+\end_layout
+
+\begin_layout Section
+Haskell
+\end_layout
+
+\begin_layout Standard
+tips:
+\end_layout
+
+\begin_layout Standard
+seems 0 or 1 is not pattern for general Num
 \end_layout
 
 \end_body

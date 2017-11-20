@@ -128,5 +128,10 @@ Under Linux (Ubuntu), the frequently used libraries/softwares (blas, lapack,
 Need to learn to use debugger in command line
 \end_layout
 
+\begin_layout Standard
+Pay attention to implicit conversion.
+ Use explicit keyword to fix possible ambiguity.
+\end_layout
+
 \end_body
 \end_document
