@@ -165,5 +165,9 @@ seems 0 or 1 is not pattern for general Num
  is left associative)
 \end_layout
 
+\begin_layout Standard
+never add typeclass constraints in data declarations
+\end_layout
+
 \end_body
 \end_document
