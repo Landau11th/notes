@@ -190,5 +190,107 @@ Functor is define in Catogory Theory.
  One familiar example might be the pushforward of a differential manifold.
 \end_layout
 
+\begin_layout Standard
+Under some context, it could behave like a container.
+ Say given a category 
+\begin_inset Formula $C$
+\end_inset
+
+ with 
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $Y$
+\end_inset
+
+ in 
+\begin_inset Formula ${\rm ob}(C)$
+\end_inset
+
+ , the functor 
+\begin_inset Formula $F$
+\end_inset
+
+ is defined as the power set functor (on the object), i.e.
+ 
+\begin_inset Formula $F(U)=2^{U}$
+\end_inset
+
+.
+ Therefore the category 
+\begin_inset Formula $D$
+\end_inset
+
+ contains objects 
+\begin_inset Formula $2^{X}$
+\end_inset
+
+ and 
+\begin_inset Formula $2^{Y}$
+\end_inset
+
+.
+ Then given any 
+\begin_inset Formula $f\in\hom(X,Y)$
+\end_inset
+
+, 
+\begin_inset Formula $F(f)$
+\end_inset
+
+ is a function between containers, i.e.
+ 
+\begin_inset Formula $F(f):\ 2^{X}\rightarrow2^{Y}\in\hom(2^{X},2^{Y})$
+\end_inset
+
+.
+ The properties of functor could be verified.
+\end_layout
+
+\begin_layout Standard
+Under some other context, it behaves like a function decomposition.
+ Similarly for a category 
+\begin_inset Formula $C$
+\end_inset
+
+ with 
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $Y$
+\end_inset
+
+ in 
+\begin_inset Formula ${\rm ob}(C)$
+\end_inset
+
+, we can construct
+\begin_inset Formula $\hom(R,X)$
+\end_inset
+
+ and 
+\begin_inset Formula $\hom(R,Y)$
+\end_inset
+
+ as objects of 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ Then one natural choice of 
+\begin_inset Formula $F(f)$
+\end_inset
+
+ is 
+\begin_inset Formula $F(f)=f\circ$
+\end_inset
+
+, i.e.
+ function composition.
+ 
+\end_layout
+
 \end_body
 \end_document
