@@ -186,12 +186,23 @@ Only some random thoughts:
 \end_layout
 
 \begin_layout Standard
-Functor is define in Catogory Theory.
- One familiar example might be the pushforward of a differential manifold.
+Functor defined in Catogory Theory is slightly different from the functor
+ in Haskell.
+ In Haskell, part of the functor (to be more precise, 
+\begin_inset Formula $F:\hom(C)\rightarrow\hom(D)$
+\end_inset
+
+) is represented by the Haskell fmap function, while the mapping for the
+ objects (or sometimes the whole thing) is called the functor?
 \end_layout
 
 \begin_layout Standard
-Under some context, it could behave like a container.
+One familiar example of functor might be the pushforward of a differential
+ manifold, although much less general.
+\end_layout
+
+\begin_layout Standard
+Under some context, the Huskell functor could behave like a container.
  Say given a category 
 \begin_inset Formula $C$
 \end_inset
@@ -246,10 +257,47 @@ Under some context, it could behave like a container.
 
 .
  The properties of functor could be verified.
+ Under such circumstances, the Huskell functor 
+\begin_inset Formula ${\rm f}$
+\end_inset
+
+ is not really a function, the notation 
+\begin_inset Formula ${\rm f\ x}$
+\end_inset
+
+ collectivley represent an element accepted by 
+\begin_inset Formula $F(f)$
+\end_inset
+
+, i.e.
+ a subset of 
+\begin_inset Formula $X$
+\end_inset
+
+, therefore a container.
+ For morphisms like 
+\begin_inset Formula $f:\ X\times Y\rightarrow Z$
+\end_inset
+
+, Haskell could treat it as 
+\begin_inset Formula $f':\ X\rightarrow\hom(Y,Z)$
+\end_inset
+
+, since one might be able to find an isomorphism between 
+\begin_inset Formula $\hom(X\times Y,Z)$
+\end_inset
+
+ and 
+\begin_inset Formula $\hom(X,\hom(Y,Z))$
+\end_inset
+
+.
+ At least this is possible for finite sets.
 \end_layout
 
 \begin_layout Standard
-Under some other context, it behaves like a function decomposition.
+Under some other context, the Huskell functor behaves like a function decomposit
+ion.
  Similarly for a category 
 \begin_inset Formula $C$
 \end_inset
