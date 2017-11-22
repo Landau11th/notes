@@ -177,5 +177,18 @@ seems 0 or 1 is not pattern for general Num
 never add typeclass constraints in data declarations
 \end_layout
 
+\begin_layout Subsection*
+Functors
+\end_layout
+
+\begin_layout Standard
+Only some random thoughts:
+\end_layout
+
+\begin_layout Standard
+Functor is define in Catogory Theory.
+ One familiar example might be the pushforward of a differential manifold.
+\end_layout
+
 \end_body
 \end_document

@@ -150,6 +150,10 @@ tips:
 \end_layout
 
 \begin_layout Standard
+seems Haskell is based on functions with only 1 parameter
+\end_layout
+
+\begin_layout Standard
 ($3)(4+) gives 7
 \end_layout
 
