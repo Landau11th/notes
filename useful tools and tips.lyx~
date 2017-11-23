@@ -27,6 +27,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -177,6 +178,14 @@ seems 0 or 1 is not pattern for general Num
 never add typeclass constraints in data declarations
 \end_layout
 
+\begin_layout Standard
+normal functors only support mapping normal functions over existing functors
+\end_layout
+
+\begin_layout Standard
+in a do block the last action cannot be bound to a name
+\end_layout
+
 \begin_layout Subsection*
 Functors
 \end_layout
@@ -199,6 +208,18 @@ Functor defined in Catogory Theory is slightly different from the functor
 \begin_layout Standard
 One familiar example of functor might be the pushforward of a differential
  manifold, although much less general.
+ Since the pushforward could be regarded as a mapping (usually isomorphism?)
+ between each single element in 
+\begin_inset Formula ${\rm ob}(C)$
+\end_inset
+
+ and 
+\begin_inset Formula ${\rm ob}(D)$
+\end_inset
+
+ (like what applicative functor does in Haskell).
+ However, a general functor could be beyond this element-element mapping,
+ like the power set functor shown below.
 \end_layout
 
 \begin_layout Standard
@@ -283,12 +304,12 @@ Under some context, the Huskell functor could behave like a container.
 \begin_inset Formula $f':\ X\rightarrow\hom(Y,Z)$
 \end_inset
 
-, since one might be able to build an isomorphism between 
+, since one might be able to find an isomorphism between 
 \begin_inset Formula $\hom(X\times Y,Z)$
 \end_inset
 
  and 
-\begin_inset Formula $\hom(X,\hom(Y,Z))$
+\begin_inset Formula $\hom\left(X,\hom(Y,Z)\right)$
 \end_inset
 
 .
@@ -337,6 +358,123 @@ ion.
 
 , i.e.
  function composition.
+ For any 
+\begin_inset Formula $g\in\hom(R,X)$
+\end_inset
+
+, 
+\begin_inset Formula $F(f)(g)=f\circ g\in\hom(R,Y)$
+\end_inset
+
+.
+ Likewise, the properties of functor need to be checked.
+\end_layout
+
+\begin_layout Standard
+Now consider a functor behaves like a pushforward.
+ Let 
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $Y$
+\end_inset
+
+, 
+\begin_inset Formula $Z$
+\end_inset
+
+ be objects of C, and 
+\begin_inset Formula $X'$
+\end_inset
+
+, 
+\begin_inset Formula $Y'$
+\end_inset
+
+, 
+\begin_inset Formula $Z'$
+\end_inset
+
+ be objects of 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ First consider a morphism 
+\begin_inset Formula $f\in\hom(X,Y)$
+\end_inset
+
+.
+ By 
+\begin_inset Quotes eld
+\end_inset
+
+behaves like a pushforward
+\begin_inset Quotes erd
+\end_inset
+
+ we meant 
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+, we know 
+\begin_inset Formula $x'=F(x)\in X'$
+\end_inset
+
+.
+ Therefore there are additional structures.
+ For any 
+\begin_inset Formula $f\in\hom(X,Y)$
+\end_inset
+
+, we know 
+\begin_inset Formula $F(f)$
+\end_inset
+
+ lies in 
+\begin_inset Formula $\hom\left(F(X),F(Y)\right)=\hom(X',Y')$
+\end_inset
+
+, and a natural choice is 
+\begin_inset Formula $F(f)=F\circ f\circ F^{-1}$
+\end_inset
+
+, where the 
+\begin_inset Formula $F$
+\end_inset
+
+ on the right-hand side means the 
+\begin_inset Formula $F$
+\end_inset
+
+ connecting 
+\begin_inset Formula $XX'$
+\end_inset
+
+ or 
+\begin_inset Formula $YY'$
+\end_inset
+
+.
+ Next, consider a morphism 
+\begin_inset Formula $f\in\hom(X\times Y,Z)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Applicative functor is used to tell Haskell explicitly the relation between
+ 
+\begin_inset Formula $F\left(\hom(Y,Z)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\hom\left(F(Y),F(Z)\right)$
+\end_inset
+
  
 \end_layout
 
