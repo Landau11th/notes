@@ -186,12 +186,12 @@ normal functors only support mapping normal functions over existing functors
 in a do block the last action cannot be bound to a name
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Functors
 \end_layout
 
 \begin_layout Standard
-Only some random thoughts:
+To the best of my understanding:
 \end_layout
 
 \begin_layout Standard
@@ -202,7 +202,7 @@ Functor defined in Catogory Theory is slightly different from the functor
 \end_inset
 
 ) is represented by the Haskell fmap function, while the mapping for the
- objects (or sometimes the whole thing) is called the functor?
+ objects (or sometimes the whole thing) is called the type constructor.
 \end_layout
 
 \begin_layout Standard
@@ -222,8 +222,38 @@ One familiar example of functor might be the pushforward of a differential
  like the power set functor shown below.
 \end_layout
 
+\begin_layout Subsubsection
+Currying Fuctions
+\end_layout
+
 \begin_layout Standard
-Under some context, the Huskell functor could behave like a container.
+For morphisms like 
+\begin_inset Formula $f:\ X\times Y\rightarrow Z$
+\end_inset
+
+, Haskell could treat it as 
+\begin_inset Formula $f':\ X\rightarrow\hom(Y,Z)$
+\end_inset
+
+, since one might be able to find an isomorphism between 
+\begin_inset Formula $\hom(X\times Y,Z)$
+\end_inset
+
+ and 
+\begin_inset Formula $\hom\left(X,\hom(Y,Z)\right)$
+\end_inset
+
+.
+ At least this is possible for finite sets.
+\end_layout
+
+\begin_layout Subsubsection
+Type constructor as a container
+\end_layout
+
+\begin_layout Standard
+Under some context, the Huskell functor, or more specifically, the type
+ constructor, could behave like a container.
  Say given a category 
 \begin_inset Formula $C$
 \end_inset
@@ -250,7 +280,7 @@ Under some context, the Huskell functor could behave like a container.
 \end_inset
 
 .
- Therefore the category 
+ The category 
 \begin_inset Formula $D$
 \end_inset
 
@@ -276,9 +306,25 @@ Under some context, the Huskell functor could behave like a container.
 \begin_inset Formula $F(f):\ 2^{X}\rightarrow2^{Y}\in\hom(2^{X},2^{Y})$
 \end_inset
 
+ with a (possible) choice of 
+\begin_inset Formula 
+\[
+F(f)(A)=\left\{ f(x)|x\in A\right\} \subset Y
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $A\subset X$
+\end_inset
+
 .
- The properties of functor could be verified.
- Under such circumstances, the Huskell functor 
+ The axioms of functor could be verified.
+ 
+\end_layout
+
+\begin_layout Standard
+In this sense, the type constructor 
 \begin_inset Formula ${\rm f}$
 \end_inset
 
@@ -295,25 +341,12 @@ Under some context, the Huskell functor could behave like a container.
 \begin_inset Formula $X$
 \end_inset
 
-, therefore a container.
- For morphisms like 
-\begin_inset Formula $f:\ X\times Y\rightarrow Z$
-\end_inset
+, therefore looks like a container.
+ 
+\end_layout
 
-, Haskell could treat it as 
-\begin_inset Formula $f':\ X\rightarrow\hom(Y,Z)$
-\end_inset
-
-, since one might be able to find an isomorphism between 
-\begin_inset Formula $\hom(X\times Y,Z)$
-\end_inset
-
- and 
-\begin_inset Formula $\hom\left(X,\hom(Y,Z)\right)$
-\end_inset
-
-.
- At least this is possible for finite sets.
+\begin_layout Subsubsection
+Type constructor as a function decomposition
 \end_layout
 
 \begin_layout Standard
@@ -367,7 +400,11 @@ ion.
 \end_inset
 
 .
- Likewise, the properties of functor need to be checked.
+ Likewise, the properties of functor could be checked.
+\end_layout
+
+\begin_layout Subsubsection
+Type constructor as a mapping
 \end_layout
 
 \begin_layout Standard
@@ -401,8 +438,12 @@ Now consider a functor behaves like a pushforward.
 \end_inset
 
 .
- First consider a morphism 
-\begin_inset Formula $f\in\hom(X,Y)$
+ 
+\end_layout
+
+\begin_layout Standard
+First consider a morphism 
+\begin_inset Formula $f\in\hom(X,Z)$
 \end_inset
 
 .
@@ -422,8 +463,8 @@ behaves like a pushforward
 \begin_inset Formula $x'=F(x)\in X'$
 \end_inset
 
-.
- Therefore there are additional structures.
+, i.e.
+ type constructor looks like a mapping, which provide additional structures.
  For any 
 \begin_inset Formula $f\in\hom(X,Y)$
 \end_inset
@@ -433,7 +474,7 @@ behaves like a pushforward
 \end_inset
 
  lies in 
-\begin_inset Formula $\hom\left(F(X),F(Y)\right)=\hom(X',Y')$
+\begin_inset Formula $\hom\left(F(X),F(Z)\right)=\hom(X',Z')$
 \end_inset
 
 , and a natural choice is 
@@ -448,17 +489,63 @@ behaves like a pushforward
 \begin_inset Formula $F$
 \end_inset
 
- connecting 
-\begin_inset Formula $XX'$
+ as the 
+\begin_inset Quotes eld
+\end_inset
+
+type constructor
+\begin_inset Quotes erd
+\end_inset
+
+ which connects 
+\begin_inset Formula $X\rightarrow X'$
 \end_inset
 
  or 
-\begin_inset Formula $YY'$
+\begin_inset Formula $Z\rightarrow Z'$
 \end_inset
 
 .
- Next, consider a morphism 
+ Of course the choice of 
+\begin_inset Formula $F$
+\end_inset
+
+ might not be unique.
+\end_layout
+
+\begin_layout Standard
+Next, consider a morphism 
 \begin_inset Formula $f\in\hom(X\times Y,Z)\sim\hom\left(X,\hom(Y,Z)\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $F(f)\in\hom(X'\times Y',Z')\sim\hom\left(X',\hom(Y',Z')\right)$
+\end_inset
+
+.
+ However, to apply the above 
+\begin_inset Quotes eld
+\end_inset
+
+natural choice
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F(f)=F\circ f\circ F^{-1}$
+\end_inset
+
+, one still needs to know how 
+\begin_inset Formula $F$
+\end_inset
+
+ transfers 
+\begin_inset Formula $\hom(Y,Z)$
+\end_inset
+
+ to 
+\begin_inset Formula $\hom(Y',Z')$
 \end_inset
 
 .
@@ -479,20 +566,15 @@ behaves like a pushforward
 \begin_inset Formula $F:\ \hom(Y,Z)\rightarrow\hom(Y',Z')$
 \end_inset
 
- explicitly.
-\end_layout
-
-\begin_layout Standard
-Applicative functor is used to tell Haskell explicitly the relation between
- 
-\begin_inset Formula $F\left(\hom(Y,Z)\right)$
+ explicitly (more precisely, the general rule of how 
+\begin_inset Formula $F\left(\hom(C)\right)$
 \end_inset
 
- and 
-\begin_inset Formula $\hom\left(F(Y),F(Z)\right)$
+ is explicitly mapped into 
+\begin_inset Formula $\hom(D)$
 \end_inset
 
- 
+).
 \end_layout
 
 \end_body
