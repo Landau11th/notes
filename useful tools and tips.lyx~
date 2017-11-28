@@ -566,7 +566,7 @@ natural choice
 \begin_inset Formula $F:\ \hom(Y,Z)\rightarrow\hom(Y',Z')$
 \end_inset
 
- (more precisely, the general rule of how 
+ explicitly (more precisely, the general rule of how 
 \begin_inset Formula $F\left(\hom(C)\right)$
 \end_inset
 
@@ -574,7 +574,7 @@ natural choice
 \begin_inset Formula $\hom(D)$
 \end_inset
 
-)explicitly.
+).
 \end_layout
 
 \end_body
