@@ -138,6 +138,11 @@ Pay attention to implicit conversion.
  Use explicit keyword to fix possible ambiguity.
 \end_layout
 
+\begin_layout Standard
+implicit type conversion from char[] to std::string& could not be established.
+ However, from char[] to const std::string and const std::string &
+\end_layout
+
 \begin_layout Section
 Python
 \end_layout
@@ -342,7 +347,6 @@ In this sense, the type constructor
 \end_inset
 
 , therefore looks like a container.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -575,6 +579,34 @@ natural choice
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Subsection
+Monad
+\end_layout
+
+\begin_layout Standard
+Monad is a monoid on the (monoidal) category of endofunctors
+\end_layout
+
+\begin_layout Subsubsection
+Monoid
+\end_layout
+
+\begin_layout Subsubsection
+Monoidal Structure on Category
+\end_layout
+
+\begin_layout Subsubsection
+Monoid on Category
+\end_layout
+
+\begin_layout Subsubsection
+Functor Category
+\end_layout
+
+\begin_layout Subsubsection
+Monad
 \end_layout
 
 \end_body

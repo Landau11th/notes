@@ -138,6 +138,12 @@ Pay attention to implicit conversion.
  Use explicit keyword to fix possible ambiguity.
 \end_layout
 
+\begin_layout Standard
+implicit type conversion from char[] to std::string& could not be established.
+ However, from char[] to std::string, const std::string and const std::string
+ & are all fine.
+\end_layout
+
 \begin_layout Section
 Python
 \end_layout
