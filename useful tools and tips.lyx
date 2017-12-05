@@ -610,5 +610,17 @@ Functor Category
 Monad
 \end_layout
 
+\begin_layout Section
+Optimization
+\end_layout
+
+\begin_layout Standard
+Useful materials:
+\end_layout
+
+\begin_layout Standard
+https://arxiv.org/pdf/1606.04474v1.pdf or https://arxiv.org/abs/1606.04474
+\end_layout
+
 \end_body
 \end_document
