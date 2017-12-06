@@ -622,5 +622,17 @@ Useful materials:
 https://arxiv.org/pdf/1606.04474v1.pdf or https://arxiv.org/abs/1606.04474
 \end_layout
 
+\begin_layout Standard
+stochastic gradient descent
+\end_layout
+
+\begin_layout Standard
+BFGS
+\end_layout
+
+\begin_layout Standard
+https://cs.stanford.edu/~acoates/papers/LeNgiCoaLahProNg11.pdf
+\end_layout
+
 \end_body
 \end_document
