@@ -145,6 +145,22 @@ implicit type conversion from char[] to std::string& could not be established.
 \end_layout
 
 \begin_layout Section
+CUDA
+\end_layout
+
+\begin_layout Standard
+add cublas.lib and curand.lib as linker
+\end_layout
+
+\begin_layout Standard
+copy cublas64_90.dll and curand64_90.dll 
+\end_layout
+
+\begin_layout Standard
+notice the difference between cublas and cublas_device
+\end_layout
+
+\begin_layout Section
 Python
 \end_layout
 
