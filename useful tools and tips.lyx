@@ -144,6 +144,11 @@ implicit type conversion from char[] to std::string& could not be established.
  & are all fine.
 \end_layout
 
+\begin_layout Standard
+try to use Curiously recurring template pattern (CRTP) instead of virtual
+ functions
+\end_layout
+
 \begin_layout Section
 CUDA
 \end_layout

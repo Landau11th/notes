@@ -160,6 +160,11 @@ copy cublas64_90.dll and curand64_90.dll
 notice the difference between cublas and cublas_device
 \end_layout
 
+\begin_layout Standard
+thrust is useful as a container.
+ Need to explore how to combine it with cuBLAS
+\end_layout
+
 \begin_layout Section
 Python
 \end_layout
