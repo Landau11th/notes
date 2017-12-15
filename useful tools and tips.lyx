@@ -170,6 +170,11 @@ thrust is useful as a container.
  Need to explore how to combine it with cuBLAS
 \end_layout
 
+\begin_layout Standard
+cublas_v2 is slightly faster than cublas (10%).
+ DO REMEMBER to initialize cublas handler.
+\end_layout
+
 \begin_layout Section
 Python
 \end_layout
