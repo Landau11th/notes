@@ -76,6 +76,11 @@ C++
 \end_layout
 
 \begin_layout Standard
+Usesulf tips for C++.
+ Need to be sorted.
+\end_layout
+
+\begin_layout Standard
 std::clock() measures CPU time, the precision is 10ms; while std::chrono::system
 _clock::now() measures wall clock time, and in higher precision
 \end_layout
@@ -154,6 +159,11 @@ CUDA
 \end_layout
 
 \begin_layout Standard
+Usesulf tips for CUDA.
+ Need to be sorted.
+\end_layout
+
+\begin_layout Standard
 add cublas.lib and curand.lib as linker
 \end_layout
 
@@ -170,8 +180,29 @@ thrust is useful as a container.
  Need to explore how to combine it with cuBLAS
 \end_layout
 
+\begin_layout Standard
+cublas_v2 is slightly faster than cublas (10%).
+ DO REMEMBER to initialize cublas handler.
+\end_layout
+
 \begin_layout Section
 Python
+\end_layout
+
+\begin_layout Standard
+Usesulf tips for Python.
+ Need to be sorted.
+\end_layout
+
+\begin_layout Standard
+An object need to be hashable in order to be used as key of dictionary.
+ Hashable means the __hash__ function return a constant value during the
+ lifetime of the object.
+ User defined class is by default hashable, since the __hash__ return the
+ identity (the address?) of the object.
+ However, in my code for enigma, the objects might return different hash
+ value, but the function still works.
+ 
 \end_layout
 
 \begin_layout Section
