@@ -205,6 +205,22 @@ An object need to be hashable in order to be used as key of dictionary.
  Maybe because I used it as a enumerate rather than dict
 \end_layout
 
+\begin_layout Standard
+similar with C++, the default parameters should be put at the end of parameter
+ list.
+ Default parameters must point to immutable object, since the default value
+ is a pointer
+\end_layout
+
+\begin_layout Standard
+when nums is a list, f(*nums) means f(num[0], num[1], ....), useful for variable
+ parameters
+\end_layout
+
+\begin_layout Standard
+use only variable that will not change as function parameters
+\end_layout
+
 \begin_layout Section
 Haskell
 \end_layout
