@@ -217,6 +217,10 @@ when nums is a list, f(*nums) means f(num[0], num[1], ....), useful for variable
  parameters
 \end_layout
 
+\begin_layout Standard
+use only variable that will not change as function parameters
+\end_layout
+
 \begin_layout Section
 Haskell
 \end_layout
