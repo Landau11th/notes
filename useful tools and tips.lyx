@@ -154,6 +154,13 @@ try to use Curiously recurring template pattern (CRTP) instead of virtual
  functions
 \end_layout
 
+\begin_layout Standard
+think twice before writing moving constructors, expecially when intensively
+ using the object as return value.
+ Return value optimization and other copy elisions shoulde be carefully
+ considered 
+\end_layout
+
 \begin_layout Section
 CUDA
 \end_layout
