@@ -228,6 +228,12 @@ when nums is a list, f(*nums) means f(num[0], num[1], ....), useful for variable
 use only variable that will not change as function parameters
 \end_layout
 
+\begin_layout Standard
+use Anaconda prompt to run scripts.
+ Use python a.py rather than py a.py.
+ 
+\end_layout
+
 \begin_layout Subsection
 Package (Anaconda)
 \end_layout
