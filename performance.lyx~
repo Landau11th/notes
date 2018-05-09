@@ -2811,6 +2811,10 @@ Under Spyder IDE
 \end_layout
 
 \begin_layout Standard
+According to sys.float_info, the python on my desktop uses double
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="4">
 <features tabularvalignment="middle">
@@ -3098,7 +3102,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-204ms
+150ms
 \end_layout
 
 \end_inset
@@ -3107,7 +3111,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-9489s
+660ms
 \end_layout
 
 \end_inset
@@ -3116,7 +3120,7 @@ symmetric diagonalization
 \begin_inset Text
 
 \begin_layout Plain Layout
-82967ms
+31400ms
 \end_layout
 
 \end_inset
@@ -3130,9 +3134,11 @@ symmetric diagonalization
 \end_layout
 
 \begin_layout Standard
-Numpy is fast, and comparable with C++ using MKL, since Numpy uses ATLAS
- internally, and I suspect that it uses parallel by default, according the
- to following screenshot.
+We can find that Numpy is extremely fast, even slightly faster than C++
+ using MKL, when treating matrix multiplication.
+ However, the diagonalization is much slower.
+ Since Numpy uses ATLAS internally, I suspect that it uses parallel by default,
+ according the to following screenshot.
 \end_layout
 
 \begin_layout Standard
