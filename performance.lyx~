@@ -3157,7 +3157,8 @@ CUDA
 
 \begin_layout Standard
 For vector manipulation: vector of size 1024*64, 1024*16*(8~12) operations
- with cublas and curand, CUDA is roughly 2~3 times faster than python.
+ with cublas and curand, CUDA (GTX745) is roughly 2~3 times faster than
+ python (i7-6700).
  Detailed benchmark as well as benchmarks under larger scale is to be given.
 \end_layout
 
